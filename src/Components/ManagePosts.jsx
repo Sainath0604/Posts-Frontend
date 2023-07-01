@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { RiDeleteBin6Line } from "react-icons/Ri";
-import { BiEditAlt } from "react-icons/Bi";
 import { Oval } from "react-loader-spinner";
 import Popup from "reactjs-popup";
 import EditPost from "./EditPost";
 import "reactjs-popup/dist/index.css";
+import { DeleteIcon, EditIcon } from "./Icons";
 
 function ManagePosts() {
   const [post, setPost] = useState([]);
@@ -137,17 +136,22 @@ function ManagePosts() {
                       <td className="border p-2">
                         <div className="flex flex-row justify-center">
                           <div className="flex justify-center mr-5">
-                            <RiDeleteBin6Line
-                              className="cursor-pointer text-gray-800 text-2xl hover:text-gray-500"
+                            <button
                               onClick={() => deletePost(post._id, post.pName)}
-                            />
+                            >
+                              <span className="cursor-pointer text-gray-800 text-2xl hover:text-gray-500">
+                                <DeleteIcon />
+                              </span>
+                            </button>
                           </div>
                           <div className="flex justify-center ">
                             <div className="flex justify-center ">
                               <Popup
                                 trigger={
                                   <button className="button">
-                                    <BiEditAlt />
+                                    <span className="cursor-pointer text-gray-800 text-2xl hover:text-gray-500">
+                                      <EditIcon />
+                                    </span>
                                   </button>
                                 }
                                 modal

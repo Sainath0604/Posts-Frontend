@@ -1,9 +1,11 @@
-import { BsTwitter } from "react-icons/Bs";
-import { BsFacebook } from "react-icons/Bs";
-import { BsInstagram } from "react-icons/Bs";
-import { BsGithub } from "react-icons/Bs";
-import { FcReddit } from "react-icons/Fc";
-import { BsYoutube } from "react-icons/Bs";
+import {
+  FBIcon,
+  GithubIcon,
+  InstaIcon,
+  RedditIcon,
+  TwitterIcon,
+  YtIcon,
+} from "./Icons";
 
 function Footer() {
   return (
@@ -22,7 +24,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <BsTwitter />
+                    <TwitterIcon />
                   </a>
                 </li>
                 <li className="hover:text-white p-2">
@@ -31,7 +33,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <BsFacebook />
+                    <FBIcon />
                   </a>
                 </li>
                 <li className="hover:text-white p-2">
@@ -40,7 +42,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <BsInstagram />
+                    <InstaIcon />
                   </a>
                 </li>
                 <li className="hover:text-white p-2">
@@ -49,7 +51,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <BsGithub />
+                    <GithubIcon />
                   </a>
                 </li>
                 <li className="hover:text-white p-2">
@@ -58,7 +60,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FcReddit />
+                    <RedditIcon />
                   </a>
                 </li>
                 <li className="hover:text-white p-2">
@@ -67,7 +69,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <BsYoutube />
+                    <YtIcon />
                   </a>
                 </li>
               </ul>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsCloudUpload } from "react-icons/Bs";
+import { UploadCloudIcon } from "./Icons";
 
 function UploadPosts() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -57,7 +57,9 @@ function UploadPosts() {
         <div className="flex flex-col items-center w-4/5">
           <h1 className="flex items-center justify-center bg-gray-800 rounded-xl font-bold text-gray-100 text-base lg:text-xl lg:w-60 mx-auto h-10 lg:h-12 p-2 lg:p-5 my-10 shadow-lg hover:shadow-2xl">
             Upload Posts
-            <BsCloudUpload className="text-2xl font-bold ml-2 lg:ml-5" />
+            <span className="text-2xl font-bold ml-2 lg:ml-5">
+              <UploadCloudIcon />
+            </span>
           </h1>
           <div className=" w-11/12 p-2 mr-10 lg:mr-0 lg:p-5 flex flex-col lg:flex-row justify-center lg:gap-x-20">
             <div className=" lg:p-5">

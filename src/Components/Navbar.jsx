@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
-import { RxCross1 } from "react-icons/Rx";
-import { RxHamburgerMenu } from "react-icons/Rx";
-import { BiUserCircle } from "react-icons/Bi";
+import { CrossIcon, HamburgerIcon, UserIcon } from "./Icons";
 
 const navigation = [
   { name: "View Posts", to: "/" },
@@ -30,12 +28,13 @@ function Navbar() {
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <RxCross1 className="block h-6 w-6" aria-hidden="true" />
+                      <div className="block h-6 w-6">
+                        <CrossIcon />
+                      </div>
                     ) : (
-                      <RxHamburgerMenu
-                        className="block h-6 w-6"
-                        aria-hidden="true"
-                      />
+                      <div className="block h-6 w-6">
+                        <HamburgerIcon />
+                      </div>
                     )}
                   </Disclosure.Button>
                 </div>
@@ -66,7 +65,9 @@ function Navbar() {
                       className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white "
                     >
                       <span className="sr-only">User Account</span>
-                      <BiUserCircle className="h-6 w-6" aria-hidden="true" />
+                      <div className="block h-6 w-6">
+                        <UserIcon />
+                      </div>
                     </button>
                   </Link>
                 </div>
