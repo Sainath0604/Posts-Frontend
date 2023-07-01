@@ -1,15 +1,13 @@
 import { useState } from "react";
 import { UploadCloudIcon } from "./Icons";
+import { getServerUrl } from "../utility/getServerUrl";
 
 function UploadPosts() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [description, setDescription] = useState("");
   const [postName, setPostName] = useState("");
 
-  const urluploadPost = new URL(
-    "/uploadPost",
-    import.meta.env.VITE_BACKEND_SERVER
-  );
+  const urluploadPost = new URL("/uploadPost", getServerUrl());
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);

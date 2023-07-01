@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Oval } from "react-loader-spinner";
+import { getServerUrl } from "../utility/getServerUrl";
 
 function Home() {
   const isLoggedIn = window.localStorage.getItem("loggedIn");
@@ -7,8 +8,8 @@ function Home() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const urlGetPost = new URL("/getPost", import.meta.env.VITE_BACKEND_SERVER);
-  const urlUserData = new URL("/userData", import.meta.env.VITE_BACKEND_SERVER);
+  const urlGetPost = new URL("/getPost", getServerUrl());
+  const urlUserData = new URL("/userData", getServerUrl());
 
   useEffect(() => {
     fetch(urlUserData, {

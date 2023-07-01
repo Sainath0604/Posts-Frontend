@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { getServerUrl } from "../utility/getServerUrl";
 
 function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const urlLoginUser = new URL(
-    "/loginUser",
-    import.meta.env.VITE_BACKEND_SERVER
-  );
+  const serverUrl = getServerUrl();
+  const urlLoginUser = new URL("/loginUser", serverUrl);
 
   function loginUser(e) {
     e.preventDefault();

@@ -4,17 +4,16 @@ import Popup from "reactjs-popup";
 import EditPost from "./EditPost";
 import "reactjs-popup/dist/index.css";
 import { DeleteIcon, EditIcon } from "./Icons";
+import { getServerUrl } from "../utility/getServerUrl";
 
 function ManagePosts() {
+  const serverUrl = getServerUrl();
   const [post, setPost] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const urlGetPost = new URL("/getPost", import.meta.env.VITE_BACKEND_SERVER);
-  const urleditPost = new URL("/editPost", import.meta.env.VITE_BACKEND_SERVER);
-  const urldeletePost = new URL(
-    "/deletePost",
-    import.meta.env.VITE_BACKEND_SERVER
-  );
+  const urlGetPost = new URL("/getPost", serverUrl);
+  const urleditPost = new URL("/editPost", serverUrl);
+  const urldeletePost = new URL("/deletePost", serverUrl);
 
   useEffect(() => {
     fetchPost();

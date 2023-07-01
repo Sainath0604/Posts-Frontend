@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import UserHome from "./UserHome";
+import { getServerUrl } from "../utility/getServerUrl";
 
 function UserDetails() {
   const [userData, setUserData] = useState({});
 
-  const urluserData = new URL("/userData", import.meta.env.VITE_BACKEND_SERVER);
+  const urluserData = new URL("/userData", getServerUrl());
 
   useEffect(() => {
     fetch(urluserData, {

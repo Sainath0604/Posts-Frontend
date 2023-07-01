@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { getServerUrl } from "../utility/getServerUrl";
 
 function ForgotPassword() {
   const [email, setEmail] = useState("");
 
-  const url = new URL("/forgotPassword", import.meta.env.VITE_BACKEND_SERVER);
+  const url = new URL("/forgotPassword", getServerUrl());
 
   function resetPassword(e) {
     e.preventDefault();

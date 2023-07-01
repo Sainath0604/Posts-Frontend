@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { getServerUrl } from "../utility/getServerUrl";
 
 function SignUp() {
   const [fName, setFname] = useState("");
@@ -8,10 +9,7 @@ function SignUp() {
   const [password, setPassword] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true);
 
-  const urlregisterUser = new URL(
-    "/registerUser",
-    import.meta.env.VITE_BACKEND_SERVER
-  );
+  const urlregisterUser = new URL("/registerUser", getServerUrl());
 
   function registerUser(e) {
     e.preventDefault();
