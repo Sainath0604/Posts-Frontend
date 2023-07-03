@@ -39,7 +39,7 @@ function SignIn() {
   }
 
   return (
-    <div className="flex justify-center mt-10 h-80">
+    <div className="flex justify-center mt-10 h-80 p-5">
       <form onSubmit={loginUser} className="w-full max-w-sm">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -69,7 +69,7 @@ function SignIn() {
         </div>
         <div className="flex flex-col items-center justify-center">
           <button
-            className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-[#176B87] hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Sign In
@@ -79,7 +79,7 @@ function SignIn() {
               Don&apos;t have an account?
               <Link
                 to="/SignUp"
-                className="text-blue-500 hover:text-blue-700 ml-2 "
+                className="text-[#00b0eb] hover:text-blue-700 ml-2 "
               >
                 Sign up
               </Link>
@@ -87,7 +87,7 @@ function SignIn() {
             <div className="">
               <Link
                 to="/ForgotPassword"
-                className="text-blue-500 hover:text-blue-700 ml-2 "
+                className="text-[#00b0eb] hover:text-blue-700 ml-2 "
               >
                 Forgot password
               </Link>

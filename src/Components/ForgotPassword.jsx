@@ -34,7 +34,7 @@ function ForgotPassword() {
   }
 
   return (
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center mt-10 p-5">
       <form onSubmit={resetPassword} className="w-full max-w-sm">
         <div className="mb-4 ">
           <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -51,7 +51,7 @@ function ForgotPassword() {
         </div>
         <div className="flex flex-col items-center justify-center">
           <button
-            className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-[#176B87] hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Reset Password
@@ -60,7 +60,7 @@ function ForgotPassword() {
             Remember your password?
             <Link
               to="/SignIn"
-              className="text-blue-500 hover:text-blue-700 ml-2"
+              className="text-[#00b0eb] hover:text-blue-700 ml-2"
             >
               Sign in
             </Link>
@@ -69,7 +69,7 @@ function ForgotPassword() {
             Don&apos;t have an account?
             <Link
               to="/SignUp"
-              className="text-blue-500 hover:text-blue-700 ml-2"
+              className="text-[#00b0eb] hover:text-blue-700 ml-2"
             >
               Sign Up
             </Link>

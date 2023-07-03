@@ -85,7 +85,7 @@ function Home() {
             {posts.map((post) => (
               <div
                 key={post._id}
-                className="flex flex-col lg:flex-row border border-gray-700 rounded-lg shadow-md hover:shadow-xl w-full lg:w-[75vw]"
+                className="flex flex-col lg:flex-row border bg-[#EAFDFC] border-gray-700 rounded-lg shadow-md hover:shadow-xl w-full lg:w-[75vw]"
               >
                 <div className="w-72 lg:w-56 lg:h-44 lg:border-r border-gray-700 p-2 flex lg:justify-center lg:items-center">
                   <img

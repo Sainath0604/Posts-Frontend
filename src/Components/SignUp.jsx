@@ -65,7 +65,7 @@ function SignUp() {
   };
 
   return (
-    <div className="flex justify-center mt-10 h-80">
+    <div className="flex justify-center mt-10 h-80 p-5">
       <form onSubmit={registerUser} className="w-full max-w-sm">
         <div className="h-10 text-2xl text-center font-bold">
           <h1>User sign up</h1>
@@ -131,7 +131,7 @@ function SignUp() {
         </div>
         <div className="flex flex-col items-center justify-center">
           <button
-            className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-[#176B87] hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Sign Up
@@ -140,7 +140,7 @@ function SignUp() {
             Already have account?
             <Link
               to="/SignIn"
-              className="text-blue-500 hover:text-blue-700 ml-2 "
+              className="text-[#00b0eb] hover:text-blue-700 ml-2 "
             >
               Log In
             </Link>

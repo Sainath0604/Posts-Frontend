@@ -24,8 +24,8 @@ const EditPost = ({ id, pName, description, onEdit, onCancel }) => {
   };
 
   return (
-    <div className="bg-white border-2 border-sky-500 rounded-3xl p-4 h-[65vh]">
-      <h1 className="flex items-center justify-center border border-gray-300 bg-gray-800 rounded-xl h-10 p-2 font-bold text-gray-50 text-xl">
+    <div className="bg-[#EAFDFC] border-2 border-[#001C30] rounded-3xl p-4 h-[65vh]">
+      <h1 className="flex items-center justify-center border border-gray-300 bg-[#001C30] rounded-xl h-10 p-2 font-bold text-gray-50 text-xl">
         Edit Product
       </h1>
 
@@ -35,7 +35,7 @@ const EditPost = ({ id, pName, description, onEdit, onCancel }) => {
             <label className="font-bold">
               Replace post image:
               <input
-                className="ml-5 mb-4 border border-sky-400 rounded-lg p-1 font-normal"
+                className="ml-5 mb-4 bg-white border border-[#001C30] rounded-lg p-1 font-normal"
                 type="file"
                 onChange={(e) => setSelectedFile(e.target.files[0])}
               />
@@ -45,7 +45,7 @@ const EditPost = ({ id, pName, description, onEdit, onCancel }) => {
             <label className="font-bold">
               Replace title:
               <input
-                className="ml-5 mb-4 border border-sky-400 rounded-lg p-1 font-normal"
+                className="ml-5 mb-4 border border-[#001C30] rounded-lg p-1 font-normal"
                 type="text"
                 placeholder="Product Name"
                 value={newPname}
@@ -59,7 +59,7 @@ const EditPost = ({ id, pName, description, onEdit, onCancel }) => {
             </div>
             <div>
               <textarea
-                className="ml-5 mb-4 border border-sky-400 rounded-lg p-1 font-normal"
+                className="ml-5 mb-4 border border-[#001C30] rounded-lg p-1 font-normal"
                 type="text"
                 rows={4}
                 cols={40}
@@ -72,13 +72,13 @@ const EditPost = ({ id, pName, description, onEdit, onCancel }) => {
         </div>
         <div className="flex flex-col gap-y-4 lg:flex-row items-center justify-center ">
           <button
-            className="border border-gray-400 bg-gray-800 text-gray-50 rounded-lg px-2 py-1 mr-14 lg:h-[6vh] w-20 lg:w-[5vw] font-medium text-lg  "
+            className="border border-gray-400 bg-[#176B87] text-gray-50 rounded-lg px-2 py-1 mr-14 lg:h-[6vh] w-20 lg:w-[5vw] font-medium text-lg  "
             onClick={handleEdit}
           >
             Save
           </button>
           <button
-            className="border border-gray-400 bg-gray-800 text-gray-50  rounded-lg px-2 py-1  h-[6vh] w-20 lg:w-[5vw] font-medium text-lg "
+            className="border border-gray-400 bg-[#176B87] text-gray-50  rounded-lg px-2 py-1  h-[6vh] w-20 lg:w-[5vw] font-medium text-lg "
             onClick={handleCancel}
           >
             Cancel

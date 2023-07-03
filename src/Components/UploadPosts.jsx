@@ -53,7 +53,7 @@ function UploadPosts() {
     <div className="flex justify-center">
       <div className="flex sm:w-full md:w-4/5 justify-center">
         <div className="flex flex-col items-center w-4/5">
-          <h1 className="flex items-center justify-center bg-gray-800 rounded-xl font-bold text-gray-100 text-base lg:text-xl lg:w-60 mx-auto h-10 lg:h-12 p-2 lg:p-5 my-10 shadow-lg hover:shadow-2xl">
+          <h1 className="flex items-center justify-center bg-[#001C30] rounded-xl font-bold text-gray-100 text-base lg:text-xl lg:w-60 mx-auto h-10 lg:h-12 p-2 lg:p-5 my-10 shadow-lg hover:shadow-2xl">
             Upload Posts
             <span className="text-2xl font-bold ml-2 lg:ml-5">
               <UploadCloudIcon />
@@ -66,7 +66,7 @@ function UploadPosts() {
               </div>
               <div className="mb-5">
                 <input
-                  className="border border-sky-400 rounded-lg p-1 w-80 h-12"
+                  className="border border-[#001C30]	 rounded-lg p-1 w-80 h-12"
                   type="text"
                   placeholder="Post Title"
                   value={postName}
@@ -83,7 +83,7 @@ function UploadPosts() {
                   rows={4}
                   cols={40}
                   name="postContent"
-                  className="  border border-sky-400 rounded-lg p-1 resize max-w-[50vw] max-h-[20vh]"
+                  className="  border border-[#001C30] rounded-lg p-1 resize max-w-[50vw] max-h-[20vh]"
                   type="text"
                   placeholder="Post caption"
                   value={description}
@@ -99,7 +99,7 @@ function UploadPosts() {
               </div>
               <div className="mb-5">
                 <input
-                  className="border border-sky-400 rounded-lg p-1 w-80 h-12"
+                  className="border border-[#001C30] bg-white rounded-lg p-2 w-80 "
                   type="file"
                   onChange={handleFileChange}
                 />
@@ -108,7 +108,7 @@ function UploadPosts() {
           </div>
           <div className="flex items-center">
             <button
-              className="border bg-gray-800 rounded-xl font-bold text-gray-100 p-2 mr-14 h-[100%] w-[100%] text-md lg:text-lg  "
+              className="border bg-[#176B87] rounded-xl font-bold text-gray-100 p-2 mr-14 h-[100%] w-[100%] text-md lg:text-lg  "
               onClick={handleUpload}
             >
               Upload

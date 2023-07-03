@@ -10,12 +10,13 @@ import ManagePosts from "./Components/ManagePosts";
 import AccessPage from "./Components/AccessPage";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import "./App.css";
 
 function App() {
   const isLoggedIn = window.localStorage.getItem("loggedIn");
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-50">
+      <div className="flex flex-col min-h-screen bg-[#DAFFFB]">
         <nav>
           <Navbar />
         </nav>

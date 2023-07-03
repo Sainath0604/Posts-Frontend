@@ -97,32 +97,40 @@ function ManagePosts() {
       ) : (
         <div className="flex sm:w-full md:w-4/5 justify-center ViewProduct">
           <div className="mb-10">
-            <table className="border border-separate w-[68vw]">
+            <table className="border  w-[68vw] border-[#001C30]">
               <caption className="caption-top my-6 text-3xl font-bold text-gray-900">
                 All Product information
               </caption>
-              <thead className="h-14">
+              <thead className="h-14 bg-[#176B87] text-white">
                 <tr>
-                  <th className="border p-2 w-[10vw]">Post Title</th>
-                  <th className="border p-2 w-[15vw]">Post image</th>
-                  <th className="border p-2 w-[25vw]">Post Description</th>
-                  <th className="border p-2 w-[10vw]">actions</th>
+                  <th className="border p-2 w-[10vw] border-[#001C30]">
+                    Post Title
+                  </th>
+                  <th className="border p-2 w-[15vw] border-[#001C30]">
+                    Post image
+                  </th>
+                  <th className="border p-2 w-[25vw] border-[#001C30]">
+                    Post Description
+                  </th>
+                  <th className="border p-2 w-[10vw] border-[#001C30]">
+                    actions
+                  </th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="border-[#001C30]">
                 {/* mapping the fetched data */}
                 {post.map((post, index) => {
                   return (
                     <tr
                       key={post._id}
                       className={`${
-                        index % 2 === 0 ? "bg-gray-100" : "bg-white"
+                        index % 2 === 0 ? "bg-[#EAFDFC]" : "bg-[#BFEAF5]"
                       } h-56`}
                     >
-                      <td className="border p-2 ">
+                      <td className="border p-2 border-[#001C30]">
                         <div className="flex justify-center">{post.pName}</div>
                       </td>
-                      <td className="border p-2">
+                      <td className="border p-2 border-[#001C30]">
                         <div className="flex justify-center items-center">
                           <img
                             className="w-44 h-44 object-contain rounded-md"
@@ -131,8 +139,10 @@ function ManagePosts() {
                           />
                         </div>
                       </td>
-                      <td className="border p-2 ">{post.pDescription}</td>
-                      <td className="border p-2">
+                      <td className="border p-2 border-[#001C30]">
+                        {post.pDescription}
+                      </td>
+                      <td className="border p-2 border-[#001C30]">
                         <div className="flex flex-row justify-center">
                           <div className="flex justify-center mr-5">
                             <button

@@ -17,7 +17,7 @@ function Navbar() {
     <div>
       <Disclosure
         as="nav"
-        className="bg-gray-800 sticky border-b border-indigo-400 "
+        className="bg-[#001C30] sticky border-b border-indigo-400 "
       >
         {({ open }) => (
           <>
@@ -47,8 +47,8 @@ function Navbar() {
                           to={item.to}
                           className={classNames(
                             item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                              ? "bg-[#001C30] text-white"
+                              : "text-gray-300 hover:bg-[#002740] hover:text-white",
                             "rounded-md px-3 py-2 text-sm font-medium"
                           )}
                         >
@@ -62,10 +62,10 @@ function Navbar() {
                   <Link to="/signIn">
                     <button
                       type="button"
-                      className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white "
+                      className="rounded-full bg-[#001c30c4] hover:bg-[#002740] p-1 text-gray-400 hover:text-white "
                     >
                       <span className="sr-only">User Account</span>
-                      <div className="block h-6 w-6">
+                      <div className="block h-6 w-6 ">
                         <UserIcon />
                       </div>
                     </button>
