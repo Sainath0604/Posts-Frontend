@@ -25,7 +25,7 @@ const EditPost = ({ id, pName, description, onEdit, onCancel }) => {
 
   return (
     <div className="bg-[#EAFDFC] border-2 border-[#001C30] rounded-3xl p-4 h-[65vh]">
-      <h1 className="flex items-center justify-center border border-gray-300 bg-[#001C30] rounded-xl h-10 p-2 font-bold text-gray-50 text-xl">
+      <h1 className="flex items-center justify-center border border-[#001C30] bg-[#001C30] rounded-xl h-10 p-2 font-bold text-gray-50 text-xl">
         Edit Product
       </h1>
 
@@ -72,13 +72,13 @@ const EditPost = ({ id, pName, description, onEdit, onCancel }) => {
         </div>
         <div className="flex flex-col gap-y-4 lg:flex-row items-center justify-center ">
           <button
-            className="border border-gray-400 bg-[#176B87] text-gray-50 rounded-lg px-2 py-1 mr-14 lg:h-[6vh] w-20 lg:w-[5vw] font-medium text-lg  "
+            className="border border-[#001C30] bg-[#176B87] text-gray-50 rounded-lg px-2 py-1 mr-14 lg:h-[6vh] w-20 lg:w-[5vw] font-medium text-lg  "
             onClick={handleEdit}
           >
             Save
           </button>
           <button
-            className="border border-gray-400 bg-[#176B87] text-gray-50  rounded-lg px-2 py-1  h-[6vh] w-20 lg:w-[5vw] font-medium text-lg "
+            className="border border-[#001C30] bg-[#176B87] text-gray-50  rounded-lg px-2 py-1  h-[6vh] w-20 lg:w-[5vw] font-medium text-lg "
             onClick={handleCancel}
           >
             Cancel

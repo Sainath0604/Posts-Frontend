@@ -99,7 +99,7 @@ function ManagePosts() {
           <div className="mb-10">
             <table className="border  w-[68vw] border-[#001C30]">
               <caption className="caption-top my-6 text-3xl font-bold text-gray-900">
-                All Product information
+                All Posts information
               </caption>
               <thead className="h-14 bg-[#176B87] text-white">
                 <tr>
@@ -124,7 +124,7 @@ function ManagePosts() {
                     <tr
                       key={post._id}
                       className={`${
-                        index % 2 === 0 ? "bg-[#EAFDFC]" : "bg-[#BFEAF5]"
+                        index % 2 === 0 ? "bg-[#EAFDFC]" : "bg-[#e0f9f9]"
                       } h-56`}
                     >
                       <td className="border p-2 border-[#001C30]">
